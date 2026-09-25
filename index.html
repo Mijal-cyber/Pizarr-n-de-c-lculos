@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor y Notitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <!-- SECCIÓN 1: CONVERSOR DE MONEDAS -->
+        <section class="converter-section">
+            <div class="input-card">
+                <label for="amount">Nombre de la notita</label>
+            </div>
+
+            <div class="money-input">
+                <input id="amount" type="number" min="0" step="any" value="20000" aria-label="Cantidad en pesos">
+                <span>U$S</span>
+            </div>
+
+            <div class="conversion-result">
+                <div id="result">13 U$S</div>
+                <button id="convertBtn" type="button">AGREGAR</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: NOTITAS -->
+        <section class="notes-section">
+            <div class="notes-grid" id="notesGrid">
+                <article class="note note-white">
+                    <h2>Vacaciones</h2>
+                    <p>$20000 = <strong>13 U$S</strong></p>
+                </article>
+
+                <article class="note note-red"></article>
+                <article class="note note-purple"></article>
+                <article class="note note-yellow"></article>
+            </div>
+
+            <div class="add-note-bar">
+                <input id="noteText" type="text" placeholder="Comprar Galletas" aria-label="Texto de la notita">
+                <button id="addNoteBtn" type="button">Agregar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
